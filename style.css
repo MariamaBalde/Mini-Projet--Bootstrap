@@ -13,10 +13,24 @@
     color: black;
 }
 
+.header_wrapper marquee{
+    color: #FD4766;
+}
+
 
 .header_wrapper .navbar-brand,
 .header_wrapper .navbar-brand span{
     font-family: 'Dancing Script', cursive;
+}
+
+.header_wrapper .navbar-toggler {
+    border: 0;
+    color: black;
+    line-height: 2;
+}
+
+.header_wrapper .navbar-toggler:focus {
+    box-shadow: none;
 }
 
 
@@ -32,6 +46,48 @@
     display: inline-block;
 }
 
+.header_wrapper .nav-item .nav-link input {
+   outline: none;
+}
+
+.header_wrapper .nav-item .nav-link input::placeholder{
+    font-size: 12px;
+    font-weight: bold;
+ }
+
+ .modal h3{
+    font-size: 30px;
+    font-weight: 700;
+    color:rgb(209, 204, 204);
+}
+
+.modal .card{
+  background-color: transparent; 
+  color: white;
+  border: 5px solid gray;
+   border-radius: 20px;
+   color:rgb(209, 204, 204);
+}
+
+ .modal  .card .card-body input{
+    background-color: transparent;
+   border-width: 2px;
+  color:rgb(209, 204, 204);
+}
+
+.modal  .card .card-body input[type="submit"]{
+    background-color: blue;
+}
+
+
+ .modal .card .card-body input:focus,
+input:hover{
+   outline: none;
+   box-shadow: none;
+}
+
+/* --------------------------------------------home_wrapper---------------------------------------------- */
+
 .home_section{
     width: 100%;
     height: 100%;
@@ -39,18 +95,17 @@
     background-image: url(images/h2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position: center center; */
     background-position: center -200px;
 }
 
-.home_section .contenu{
-    margin: 400px 300px 0 300px;
+.home_section .col-lg-6{
+    margin-top: 500px;
     border: 2px solid beige;
      font-family: 'Whisper', cursive;
      background-color: bisque;
 }
 
-.home_section .contenu h1{
+.home_section .col-lg-6 h1{
     font-family: 'Dancing Script', cursive;
 }
 
@@ -81,8 +136,8 @@
 }
 
 .footer_wrapper .social-icon a:hover {
-    background-color: bisque;
-    border-color:bisque;
+    background-color: #FD4766;
+    border-color:#FD4766;
     color: white;
     box-shadow: 0 10 15 0 rgb(0 0 0 / 10%);
     transform: translateY(-3px);
@@ -94,10 +149,12 @@
 }
 
 .footer_wrapper .copyright-text a {
-    color: bisque;
+    color: #FD4766;
 }
 
 .footer_wrapper .footer-log,
 .footer_wrapper .footer-log span{
     font-family: 'Dancing Script', cursive;
 }
+
+
